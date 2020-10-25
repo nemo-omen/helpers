@@ -6,6 +6,6 @@ Credit will be given to whoever I learned the technique from in the sample code'
 
 ## Contents
 1. [Svelte](https://github.com/nemo-omen/helpers/tree/main/svelte)
-   - [Component properties in `style` block](https://github.com/nemo-omen/helpers/blob/main/svelte/CssVariables.svelte)
+   - [Component properties in `style` block](https://github.com/nemo-omen/helpers/tree/main/svelte/PropertiesAndVariablesInStyleBlock)
 2. [Svg](https://github.com/nemo-omen/helpers/tree/main/svg)
-   - [CSS variables to style SVG](https://github.com/nemo-omen/helpers/blob/main/svg/css-variables-in-svg.html)
+   - [CSS variables to style SVG](https://github.com/nemo-omen/helpers/tree/main/svg/CssVariablesForSVG)
