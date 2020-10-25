@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables in SVG the Easy Way</title>
+    <style>
+        /* This is it!  Just make sure to add `svg` to the selector list where you want the custom properties to apply */
+        :root, svg {
+            --red: #ff443a;
+            --yellow: #ffda44;
+            --blue: #41b3ff;
+            --green: #38d1ab;
+            --dark-gray: #1a1a1a;
+            --fonts: 'Roboto', 'Helvetica', 'Arial', sans-serif; /* just added this to show the custom properties still apply to the rest of the document */ 
+        }
+        rect {
+            width: 45px;
+        }
+        .red-rect {
+            fill: var(--red)
+        }
+        .green-rect {
+            fill: var(--green);
+        }
+        .blue-rect {
+            fill: var(--blue);
+        }
+        .yellow-rect {
+            fill: var(--yellow);
+        }
+        h1 {
+            font-family: var(--fonts);
+            color: var(--dark-gray);
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>CSS Variables in SVG the Easy Way</h1>
+        <svg viewBox="0 0 200 45">
+            <rect class="blue-rect" width="45" height="45" x="2.5" y="0" />
+            <rect class="red-rect" width="45" height="45" x="52.5" y="0" />
+            <rect class="yellow-rect" width="45" height="45" x="102.5" y="0" />
+            <rect class="green-rect" width="45" height="45" x="152.5" y="0" />
+        </svg>
+        
+    </main>
+</body>
+</html>
